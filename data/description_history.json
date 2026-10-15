@@ -1,0 +1,578 @@
+{
+  "startdatum": "2026-10-15",
+  "senast_observerad": "2026-10-15",
+  "planer": {
+    "050b78742db49b3db2a7": {
+      "namn": "Förslag till ny Detaljplan för Daggkåpan 2, Bergviken",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-03-06-forslag-till-ny-detaljplan-for-daggkapan-2-bergviken.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Pröva förutsättningar för vård- och omsorgsboende samt förskola. Ärendenummer: KLF2024-1056",
+          "hash": ""
+        }
+      ]
+    },
+    "5fb58930099cd3041378": {
+      "namn": "Förslag till ny Detaljplan för Gammelstaden 26:6, Kyrkbyn",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2022-01-20-forslag-till-ny-detaljplan-for-gammelstaden-266-kyrkbyn.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Utveckla gamla brandstationen till bostäder, KLF 2023/1734",
+          "hash": ""
+        }
+      ]
+    },
+    "30ae23d9e2dd4afc0ac0": {
+      "namn": "Förslag till ny Detaljplan för Gammelstaden 6:166, Kyrkbyn",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-04-12-forslag-till-ny-detaljplan-for-gammelstaden-6166-kyrkbyn.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Möjliggöra för nytt bostadsområde, KLF 2023/1745",
+          "hash": ""
+        }
+      ]
+    },
+    "65aa2268fac694daaf4e": {
+      "namn": "Förslag till ny Detaljplan för Hajen 7, Centrum",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-13-forslag-till-ny-detaljplan-for-hajen-7-centrum.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Se över förutsättningarna för livsmedelsbutik, kontor och bostäder. Ärendenummer: KLF2024/1853",
+          "hash": ""
+        }
+      ]
+    },
+    "aba9f073100f30200c61": {
+      "namn": "Förslag till ny Detaljplan för Riga 1:16, Dalbo",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-09-27-forslag-till-ny-detaljplan-for-riga-116-dalbo.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Möjliggöra för småhusbebyggelse, KLF2023/1740",
+          "hash": ""
+        }
+      ]
+    },
+    "7acb58d55567b4526f8b": {
+      "namn": "Förslag till ny Detaljplan för del Notviken, del av Notviken 4:40, Cylindern och Vagnen",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2022-08-29-forslag-till-ny-detaljplan-for-del-notviken-del-av-notviken-440-cylindern-och-vagnen.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Vilande: Möjliggöra för bostäder och eventuellt service, SBF 2022/599",
+          "hash": ""
+        }
+      ]
+    },
+    "247527cddad8193d289e": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, Fjärilen 3",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-11-03-forslag-till-ny-detaljplan-for-del-av-centrum-fjarilen-3.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Möjliggöra för bostäder, KLF2023/1699",
+          "hash": ""
+        }
+      ]
+    },
+    "4d1a7a77dc73a52b5ef6": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, Hägern 14 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-11-22-forslag-till-ny-detaljplan-for-del-av-centrum-hagern-14-m.fl..html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Vilande: Förtätning av skolverksamhet. KLF 2024/1784",
+          "hash": ""
+        }
+      ]
+    },
+    "42114307df07e3289e0a": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, Räven 20",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2020-11-11-forslag-till-ny-detaljplan-for-del-av-centrum-raven-20.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Utökad byggrätt för centrumändamål, KLF 2023/1271",
+          "hash": ""
+        }
+      ]
+    },
+    "e9cd6537107a1782a244": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, Svalan 9",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2021-04-22-forslag-till-ny-detaljplan-for-del-av-centrum-svalan-9.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Vilande: Förtätning av bostäder, KLF 2023/1456",
+          "hash": ""
+        }
+      ]
+    },
+    "663331eae2d51f362c3e": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, del av Bävern 1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2020-08-20-forslag-till-ny-detaljplan-for-del-av-centrum-del-av-bavern-1.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Förtätning av bostäder och verksamheter, KLF 2023/1274",
+          "hash": ""
+        }
+      ]
+    },
+    "2ce4bda405401543d38d": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, del av Gültzauudden, del av Innerstaden 2:1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2019-09-16-forslag-till-ny-detaljplan-for-del-av-centrum-del-av-gultzauudden-del-av-innerstaden-21.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Förtätning av bostäder på Gültzauudden, KLF2023-1245",
+          "hash": ""
+        }
+      ]
+    },
+    "802ecd7ed3d2dc620ba7": {
+      "namn": "Förslag till ny Detaljplan för del av Hertsön 11:1 m fl",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-04-22-forslag-till-ny-detaljplan-for-del-av-hertson-111-m-fl.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Utveckling av industriområde, Hertsöfältet, KLF2023/1308",
+          "hash": ""
+        }
+      ]
+    },
+    "b73fc9edfb644e412df4": {
+      "namn": "Förslag till ny Detaljplan för del av Hertsön 11:1 och 20:1, Hertsöheden del 1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-01-23-forslag-till-ny-detaljplan-for-del-av-hertson-111-och-201-hertsoheden-del-1.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Antagen: Utbyggnad av nytt bostadsområde Hertsöheden, KLF 2023-1318 Planens huvudsakliga syfte är att pröva förutsättningarna för ny bostadsbebyggelse för den allmänna bostadsförsörjningen. I detaljplanen ska mark även reserveras för tillkommande kommunala funktioner, exempelvis förskola, skola, vård- och omsorgsboende samt tillskapas möjligheter för komplementverksamheter, idrott och andra eventuella mötesplatser. Den nya bebyggelsen ska anpassas till omgivningen och befintlig natur. Hertsöheden är utpekat som framtida expansionsområde för tätorten och ska ingå i stadsdelen Hertsön. Hela Hertsöheden kommer att planläggas i flera etapper, denna detaljplan utgör den första delen. Planområdet är beläget norr om Hertsövägen i Hertsöhedens västra del, i den del som angränsar mot Hertsö centrum och Lerbäcken. Planen ger plats för ca 800 nya bostäder i blandade bostadsformer samt bland annat skola, förskola, vård- och omsorgsboende, park, idrottsplats, kompletterande verksamheter samt nya vägar. Större delen av planområdet berör mark som inte är planlagd sedan tidigare. Planområdet är ca 34 hektar stort och utgörs i sin helhet av kommunalt ägd mark. Detaljplanen har föregåtts av ett planprogram för hela Hertsöheden, godkänt i KF 2023, med tidiga avvägningar, inriktningar och övergripande mål för områdets utveckling. Dessa har varit vägledande för detaljplanen. Detaljplanen bedöms stämma överens med gällande översiktsplan. Beslut har tagits att detaljplanens genomförande kan antas medföra betydande miljöpåverkan. En miljökonsekvensbeskrivning för detaljplanen har därför tagits fram. Beslut om planuppdrag togs av kommunstyrelsens arbetsutskott (2023-10-23 § 20). Detaljplanen handläggs enligt plan- och bygglagens regler för utökat förfarande. Detta innebär att berörda sakägare ges tillfälle att lämna synpunkter på detaljplanen under ett samråd och under en granskning. Efter samrådet respektive granskning kommer inkomna synpunkter att sammanställas och besvaras i en samrådsredogörelse och i ett granskningsutlåtande. Kommunfullmäktige beslutar om antagande av detaljplanen. Här befinner vi oss i planprocessen Kommunfullmäktige beslutade 2026-09-28 § 134 att anta detaljplanen. Kommunfullmäktiges protokollsutdrag De som senast under granskningen lämnat synpunkter som inte har tillgodosetts har rätt att överklaga detaljplanen under prövningstiden efter beslut om antagande. Planförslaget har visats för granskning mellan 2026-02-20 till 2026-03-23 och samråd mellan 2025-03-06 till 2025-03-27. Handlingar Antagandehandlingar Plankarta Planbeskrivning Granskningsutlåtande Miljökonsekvensbeskrivning Särskild sammanställning av MKB Gestaltningsprogram Granskningsshandlingar Plankarta Planbeskrivning Samrådsredogörelse Miljökonsekvensbeskrivning Gestaltningsprogram Samrådshandlingar Plankarta Planbeskrivning Utredningar och underlag framtagna i samband med denna detaljplan Dagvattenutredning (2025) Dagvattenutredning komplettering (2025) Bullerutredning (2025) Riskutredning (2024) Artskyddsutredning (2025) Barnkonsekvensanalys (2025) Kumulativa effekter på artskyddet (2026) Utredningar framtagna för planprogram för Hertsöheden som utgör underlag även för denna plan Dagvattenutredning (2024) Våtmarksekologisk bedömning (2024) Geoteknisk utredning PM (2022) Geoteknisk utredning MUR (2022) Fågel och groddjursinventering som komplement till utförd NVI (2023) Naturvärden Hertsöheden sammanställning (2021) Naturinventering Hertsöheden (2013) Fördjupad grodinventering (2024) Beslutat planprogram Här hittar du en presentation av planförslaget",
+          "hash": ""
+        }
+      ]
+    },
+    "1b50bed0aef14559b6d8": {
+      "namn": "Förslag till ny Detaljplan för del av Kallax, Kallax 17:1 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2019-09-17-forslag-till-ny-detaljplan-for-del-av-kallax-kallax-171-m.fl..html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Nya tomter för bostäder, KLF2023-1143",
+          "hash": ""
+        }
+      ]
+    },
+    "2d7cf79669226a5e1d02": {
+      "namn": "Förslag till ny Detaljplan för del av Kronan, Kikaren, Bärmesen m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-04-29-forslag-till-ny-detaljplan-for-del-av-kronan-kikaren-barmesen-m.fl..html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Möjliggöra och utveckla bebyggelsen på fastigheterna Kronan, Kikaren Bärmesen m.fl, KLF2024-322",
+          "hash": ""
+        }
+      ]
+    },
+    "2bbd5a01b36492e715f6": {
+      "namn": "Förslag till ny Detaljplan för del av Kronan, Logementet 1, Skidan 1 och del av Kronan 1:1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-04-29-forslag-till-ny-detaljplan-for-del-av-kronan-logementet-1-skidan-1-och-del-av-kronan-11.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Utveckling av parkeringshus samt utreda typ av bebyggelse som passar till Lulsundsbergets sluttning, KLF2024/324",
+          "hash": ""
+        }
+      ]
+    },
+    "abba7b8ed452724dcd55": {
+      "namn": "Förslag till ny Detaljplan för del av Måttsund, del av Måttsund 22:1, Lillvikholmen",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2021-03-24-forslag-till-ny-detaljplan-for-del-av-mattsund-del-av-mattsund-221-lillvikholmen.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Vilande: Nya tomter för bostadshus, KLF2023-1247",
+          "hash": ""
+        }
+      ]
+    },
+    "2873f6921da15087778a": {
+      "namn": "Förslag till ny Detaljplan för del av Notviken 4:40 och del av Storheden 1:1, Ektjärn 2",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-10-24-forslag-till-ny-detaljplan-for-del-av-notviken-440-och-del-av-storheden-11-ektjarn-2.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "LAGA KRAFT: Förslag till detaljplan för del av Notviken 4:40 och del av Storheden 1:1, Ektjärn 2 KLF 2024/640",
+          "hash": ""
+        }
+      ]
+    },
+    "f2ef95469383fffddf1e": {
+      "namn": "Förslag till ny Detaljplan för del av Rutvik 3:16 m.fl. Bostäder",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-03-06-forslag-till-ny-detaljplan-for-del-av-rutvik-316-m.fl.-bostader.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Utveckling av nya bostäder i Rutvik, KLF 2022/1123",
+          "hash": ""
+        }
+      ]
+    },
+    "efa45ad3f699eaa9f6e2": {
+      "namn": "Förslag till ny Detaljplan för del av Rutvik 3:16 m.fl. Rutvik Östra arbetsplatsområde",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-06-27-forslag-till-ny-detaljplan-for-del-av-rutvik-316-m.fl.-rutvik-ostra-arbetsplatsomrade.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Vilande: Nytt arbetsplatsområde öster om Rutvik, KLF 2024/1117",
+          "hash": ""
+        }
+      ]
+    },
+    "354b7fa931ae15395a7f": {
+      "namn": "Förslag till ny Detaljplan för del av Stören 17 och Innerstaden 2:28",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-11-12-forslag-till-ny-detaljplan-for-del-av-storen-17-och-innerstaden-228.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Utveckling av bostäder med aktiv bottenvåning samt ny stadsdelspark. Ärendenummer KLF2024/1613",
+          "hash": ""
+        }
+      ]
+    },
+    "82ec2e0abfeb69b2573d": {
+      "namn": "Förslag till ny Detaljplan för del av Sunderbyn, Sunderbyn 1:19",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-11-03-forslag-till-ny-detaljplan-for-del-av-sunderbyn-sunderbyn-119.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Möjliggöra för bostäder på landsbyggden, KLF 2023/1166",
+          "hash": ""
+        }
+      ]
+    },
+    "3640d5991964ee3b7649": {
+      "namn": "Förslag till ny Detaljplan för del av Svartön, del av Svartön 18:20 m.fl. Uddebo",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-03-31-forslag-till-ny-detaljplan-for-del-av-svarton-del-av-svarton-1820---m.fl.-uddebo.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Utveckling av industri- och hamnområde, KLF 2023-1101",
+          "hash": ""
+        }
+      ]
+    },
+    "7f54e84535f77a600cda": {
+      "namn": "Förslag till ny Detaljplan för del av centrum, Katten 6",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-12-04-forslag-till-ny-detaljplan-for-del-av-centrum-katten-6.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Överklagad: Pröva förutsättningar för ny bebyggelse, KLF2023-1459",
+          "hash": ""
+        }
+      ]
+    },
+    "b86171359ee6aa35d08d": {
+      "namn": "Förslag till ny Detaljplan för del av fastigheten Svartöstaden 18:17 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-03-31-forslag-till-ny-detaljplan-for-del-av-fastigheten-svartostaden-1817-m.fl..html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Utveckling av infrastrukturen på Svartön, KLF2023-1743",
+          "hash": ""
+        }
+      ]
+    },
+    "4b96398a3d28ada86a9f": {
+      "namn": "Förslag till ny Detaljplan för fastigheten Mjölkudden 3:11 och Skepparen 5",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-08-16-forslag-till-ny-detaljplan-for-fastigheten-mjolkudden-311-och-skepparen-5.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Förändrad exploatering i Mjölkuddens centrum, KLF2023-1163",
+          "hash": ""
+        }
+      ]
+    },
+    "6f56036d45d5442025c9": {
+      "namn": "Förslag till ny detaljplan för Antnäs 2:15 och del av Antnäs 1:29",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-05-07-forslag-till-ny-detaljplan-for-antnas-215-och-del-av-antnas-129.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Undersöka möjligheterna att bygga fler bostäder i Antnäs. Detaljplanens ärendenummer: KLF2026/472",
+          "hash": ""
+        }
+      ]
+    },
+    "61f1be07c20ba919bab7": {
+      "namn": "Förslag till ny detaljplan för Sundsgården 4, Östermalm",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-10-29-forslag-till-ny-detaljplan-for-sundsgarden-4-ostermalm.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Utveckling med fler verksamheter, KLF 2026-881",
+          "hash": ""
+        }
+      ]
+    },
+    "d7790132b48ba5e7349f": {
+      "namn": "Förslag till ny detaljplan för Växthuset 6 och 7 samt del av Bredviken 11:107",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-21-forslag-till-ny-detaljplan-for-vaxthuset-6-och-7-samt-del-av-bredviken-11107.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Syftet är att pröva förutsättningarna för bostäder i form av flerbostadshus. Ärendenummer: KLF2022/1048",
+          "hash": ""
+        }
+      ]
+    },
+    "8dec310beac9316f426d": {
+      "namn": "Förslag till ny detaljplan för del av Bergnäset 1:1, marinområdet",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-02-26-forslag-till-ny-detaljplan-for-del-av-bergnaset-11-marinomradet.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Undersöka möjligheter för verksamhetsområde bland annat för förvaring av båtar. Ärendenummer KLF2023/1247",
+          "hash": ""
+        }
+      ]
+    },
+    "0e76d2bcc66e0601e9b2": {
+      "namn": "Förslag till ny detaljplan för del av Centrum, Isbrytaren 1:2",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-09-16-forslag-till-ny-detaljplan-for-del-av-centrum-isbrytaren-12.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Bostäder och att säkerställa förutsättningarna för en långsiktigt hållbar och genomförbar utveckling av närområdet.",
+          "hash": ""
+        }
+      ]
+    },
+    "94a4938310cca2214169": {
+      "namn": "Förslag till ny detaljplan för del av Hertsön 11:1, mellanområdet",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-21-forslag-till-ny-detaljplan-for-del-av-hertson-111-mellanomradet.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Planuppdraget syftar till att pröva förutsättningarna för verksamheter, tekniska anläggningar och tillhörande infrastruktur. Ärendenummer: KLF2024/1950",
+          "hash": ""
+        }
+      ]
+    },
+    "338ac10e11b76a309798": {
+      "namn": "Förslag till ny detaljplan för del av Mjölkudden, Mjölkudden 3:13 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-06-09-forslag-till-ny-detaljplan-for-del-av-mjolkudden-mjolkudden-313-m.fl..html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "ÖVERKLAGAD: Förtätning med bostäder, KLF2023/1747",
+          "hash": ""
+        }
+      ]
+    },
+    "d54515bad5d9f0e322f4": {
+      "namn": "Förslag till ny detaljplan för del av Rörbäck, Rörbäcken 1:63 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-07-07-forslag-till-ny-detaljplan-for-del-av-rorback-rorbacken-163-m.fl..html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Samråd: Utökning av Rörbäcks camping och hamn, KLF 2023/1165",
+          "hash": ""
+        }
+      ]
+    },
+    "ae7b722bbf2c983e997c": {
+      "namn": "Förslag till ny detaljplan för del av Skutviken, Vattenormen 1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-21-forslag-till-ny-detaljplan-for-del-av-skutviken-vattenormen-1.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Syftet är att pröva förutsättningarna för kontor och handel. Ärendenummer: KLF2024/1819",
+          "hash": ""
+        }
+      ]
+    },
+    "b8f2a92599a847356d57": {
+      "namn": "Förslag till ny detaljplan för del av Småskär, del av Småskären 19:1, Kyrkviken",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-11-18-forslag-till-ny-detaljplan-for-del-av-smaskar-del-av-smaskaren-191-kyrkviken.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Långsiktigt bevarande av fiskeläget, KLF 2023/1310",
+          "hash": ""
+        }
+      ]
+    },
+    "5c0144e4854a2a5dbda3": {
+      "namn": "Förslag till ny detaljplan för del av Stadsön 1:120",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-03-13-forslag-till-ny-detaljplan-for-del-av-stadson-1120.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Kolla på möjligheten att uppföra grupp/stödboende i två våningar",
+          "hash": ""
+        }
+      ]
+    },
+    "278749d6dc8c83d1d2cb": {
+      "namn": "Förslag till ny detaljplan för del av Stadsön 1:857, Kyrkåkra 2",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-21-forslag-till-ny-detaljplan-for-del-av-stadson-1857-kyrkakra-2.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Syftet med ny detaljplan är att pröva förutsättningarna för verksamheter. Ärendenummer: KLF2024/1949",
+          "hash": ""
+        }
+      ]
+    },
+    "eca7b70ef2aa5a34095b": {
+      "namn": "Förslag till ny detaljplan för del av Verdandi 1 och del av Lövskatan 9:1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-03-25-forslag-till-ny-detaljplan-for-del-av-verdandi-1-och-del-av-lovskatan-91.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Undersöka möjligheterna till utökning av verksamhetsområde",
+          "hash": ""
+        }
+      ]
+    },
+    "1442a690263c71d34950": {
+      "namn": "Förslag till ny detaljplan för del av del av Kungsfågeln 5",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-03-13-forslag-till-ny-detaljplan-for-del-av-del-av-kungsfageln-5.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Ändring av detaljplaner för att kunna bygga en ny sporthall i centrum",
+          "hash": ""
+        }
+      ]
+    },
+    "34554f92ae813e8799e4": {
+      "namn": "Förslag till planprogram för Luleå Centralstation och Östra stranden",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-02-25-forslag-till-planprogram-for-lulea-centralstation-och-ostra-stranden.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Syftet med planprogrammet är att utveckla Luleå Centralstation som en attraktiv bytesnod för hållbart resande och att hantera stadsutveckling i stationsområdet och Östra stranden som en helhet.",
+          "hash": ""
+        }
+      ]
+    },
+    "228478d6a891fbaf769a": {
+      "namn": "Förslag till ändring av detaljplan för del av Bilen 23",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-03-13-forslag-till-andring-av-detaljplan-for-del-av-bilen-23.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Ändring av detaljplan för att möjliggöra biltvätt",
+          "hash": ""
+        }
+      ]
+    },
+    "d3c5eef034e1c968dee0": {
+      "namn": "Förslag till ändring av stadsplan för Skepparen m.fl. (A273)",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-02-26-forslag-till-andring-av-stadsplan-for-skepparen-m.fl.-a273.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-10-15",
+          "till": null,
+          "text": "Överklagad - Detaljplanen syftar till att möjliggöra att delar av bostadsbebyggelsen inom Skepparen 3 kan byggas ut med balkonger.",
+          "hash": ""
+        }
+      ]
+    }
+  }
+}
