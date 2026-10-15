@@ -160,6 +160,7 @@ def main():
             # Keep the first-day baseline intact on a same-day rerun.
             changes_path=ROOT/"changes"/f"{stamp}-{datetime.now(timezone.utc).strftime('%H%M%S')}.json"
     write_json(changes_path,{"datum":stamp,"forsta_matning":not bool(previous),"andringar":events})
+    write_json(ROOT/"history_index.json",{"files":sorted(x.name for x in (ROOT/"changes").glob("*.json"))})
     with (ROOT/"latest.csv").open("w",encoding="utf-8-sig",newline="") as f:
         writer=csv.DictWriter(f,fieldnames=["id","arendenummer","namn","omrade","status","planprocess","url","kalla"],delimiter=";")
         writer.writeheader();writer.writerows(current)
