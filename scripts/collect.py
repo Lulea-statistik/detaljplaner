@@ -23,24 +23,30 @@ def fetch(url):
     return BeautifulSoup(r.text,"html.parser")
 
 def fetch_rendered(url):
-    """Render asynchronously loaded municipal listings with a real browser."""
+    """Expand 'Visa fler' before extracting the official plan cards."""
     with sync_playwright() as p:
         browser=p.chromium.launch(headless=True)
         page=browser.new_page(locale="sv-SE")
         page.goto(url,wait_until="domcontentloaded",timeout=60000)
-        try:
-            page.get_by_text("Antnäs",exact=False).first.wait_for(timeout=25000)
-        except Exception:
-            pass
-        page.wait_for_timeout(3500)
+        page.locator("li.hiq-detail-planning-list__hit").first.wait_for(timeout=35000)
+        for _ in range(20):
+            shown=page.locator("li.hiq-detail-planning-list__hit").count()
+            label=page.locator(".hiq-detail-planning-list__show-more-info").inner_text()
+            numbers=re.search(r"Visar\s+(\d+)\s+av\s+(\d+)",label)
+            expected=int(numbers.group(2)) if numbers else None
+            if expected is not None and shown>=expected:break
+            btn=page.locator("button.hiq-detail-planning-list__show-more-button")
+            if not btn.count() or not btn.is_visible():break
+            btn.click()
+            try:
+                page.wait_for_function("(old) => document.querySelectorAll('li.hiq-detail-planning-list__hit').length > old",arg=shown,timeout=15000)
+            except Exception:page.wait_for_timeout(1200)
         html=page.content()
-        text=page.locator("body").inner_text()
         browser.close()
-    from pathlib import Path
     Path("diagnostics").mkdir(exist_ok=True)
     Path("diagnostics/last-rendered.html").write_text(html,encoding="utf-8")
-    Path("diagnostics/last-rendered.txt").write_text(text,encoding="utf-8")
     return BeautifulSoup(html,"html.parser")
+
 def record(url,title="",area="",label=""):
     soup=fetch(url)
     main=soup.select_one("main") or soup.select_one("#content") or soup
@@ -67,38 +73,20 @@ def record(url,title="",area="",label=""):
             "planprocess":stage,"url":url,"kalla":url}
 
 def candidates(soup,base):
-    """Read the complete listing, including plan cards that are not anchor elements."""
-    container=soup.select_one("main") or soup.select_one("#content") or soup
-    # Most municipality listings group entries by area and style each plan status.
-    # Parse textual entries even when their title has no direct link.
-    text=container.get_text("\n",strip=True)
-    areas=["Antnäs","Bergnäset","Bergviken","Centrum","Dalbo","Gammelstad",
-           "Hertsön","Kallax","Kronan","Lövskatan","Måttsund","Mjölkudden",
-           "Notviken","Örnäset","Porsön","Rörbäck","Rutvik","Skärgården",
-           "Storheden","Sunderbyn","Svartön"]
-    lines=[l.strip() for l in text.splitlines() if l.strip()]
-    plan_starts=re.compile(r"^(Under arbete|Samråd|Granskning|Antagande|Antagen|Laga kraft)\b",re.I)
     cards=[]
-    area=""
-    active=None
-    for line in lines:
-        marea=re.match(r"^("+"|".join(map(re.escape,areas))+r")\s*(?:\(\d+\))?$",line,re.I)
-        if marea:
-            if active: cards.append(active)
-            active=None
-            area=marea.group(1)
-            continue
-        m=plan_starts.match(line)
-        if m:
-            if active:cards.append(active)
-            active={"omrade":area,"status":m.group(1),"parts":[line[m.end():].strip()]}
-        elif active:
-            if line.startswith(("Du kan också se alla","Kontakt","Detaljplanekontoret","Sidan uppdaterades")):
-                cards.append(active);active=None
-            elif len(" ".join(active["parts"]))<1100:
-                active["parts"].append(line)
-    if active:cards.append(active)
-    return [c for c in cards if c["omrade"] and any("detaljplan" in x.casefold() or "planprogram" in x.casefold() or "KLF" in x for x in c["parts"])]
+    for li in soup.select("li.hiq-detail-planning-list__hit"):
+        title=txt(li.select_one(".hiq-detail-planning-list__hit-title"))
+        description=txt(li.select_one(".hiq-detail-planning-list__hit-preamble"))
+        status=txt(li.select_one(".hiq-detail-planning-list__hit-status"))
+        link=li.select_one("a.hiq-detail-planning-list__hit-link")
+        if not title or not link:continue
+        url=urljoin(base,link.get("href",""))
+        case=RX.search(description+" "+title)
+        cards.append({"id":hashlib.sha256(url.encode()).hexdigest()[:20],
+                      "arendenummer":case.group(0).replace(" ","") if case else "",
+                      "namn":title,"omrade":"","status":status or "Ej angiven",
+                      "planprocess":description,"url":url,"kalla":base})
+    return cards
 
 def collect():
     errors=[]
@@ -106,25 +94,14 @@ def collect():
         try:
             soup=fetch_rendered(source)
             cards=candidates(soup,source)
-            print(f'Diagnostik: {source} ger {len(cards)} planposter; Antnäs={"Antnäs" in soup.get_text()}',flush=True)
-            if len(cards)<25:
-                errors.append(f"{source}: endast {len(cards)} planposter");continue
-            out=[]
-            for card in cards:
-                body=" ".join(card["parts"])
-                case=RX.search(body)
-                # No direct plan URL? Preserve listing URL and the extracted text.
-                # Stable identity uses case number, otherwise area + title.
-                clean=re.sub(r"\s+"," ",body).strip()
-                title=re.split(r"\b(?:Ärendenummer|Detaljplanens ärendenummer|KLF\s*\d{4})\b",clean,maxsplit=1,flags=re.I)[0].strip()
-                identity=case.group(0).replace(" ","") if case else hashlib.sha256((card["omrade"]+"|"+title).encode()).hexdigest()[:14]
-                out.append({"id":identity,"arendenummer":case.group(0).replace(" ","") if case else "",
-                            "namn":title[:450],"omrade":card["omrade"],"status":card["status"],
-                            "planprocess":"","url":source,"kalla":source})
-            if len(out)<25:raise RuntimeError("Ofullständig planlista")
-            if len({x["id"] for x in out})!=len(out):
-                raise RuntimeError("Icke-unika planidentiteter; kräver manuell kontroll")
-            return out,source,errors
+            count_label=txt(soup.select_one(".hiq-detail-planning-list__show-more-info"))
+            m=re.search(r"Visar\s+(\d+)\s+av\s+(\d+)",count_label)
+            expected=int(m.group(2)) if m else None
+            print(f"Diagnostik: {len(cards)} planposter; etikett={count_label}",flush=True)
+            if expected is None:raise RuntimeError("Kan inte verifiera förväntat antal planer")
+            if len(cards)!=expected:raise RuntimeError(f"Endast {len(cards)} av {expected} planer hämtade")
+            if len({x["url"] for x in cards})!=len(cards):raise RuntimeError("Dubbletter i källans URL:er")
+            return cards,source,errors
         except Exception as e:errors.append(f"{source}: {e}")
     raise RuntimeError("Ingen tillförlitlig komplett inventering: "+"; ".join(errors[:12]))
 
