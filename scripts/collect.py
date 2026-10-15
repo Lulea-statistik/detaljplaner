@@ -151,6 +151,36 @@ def main():
     now=datetime.now(timezone.utc).isoformat(timespec="seconds")
     stamp=now[:10]
     snapshot={"hamtad_utc":now,"kallista":source,"antal":len(current),"planer":current,"varningar":errors}
+    # Timeline of first observation and status transitions (not municipal decision dates).
+    timeline_path=ROOT/"status_history.json"
+    timeline=json.loads(timeline_path.read_text(encoding="utf-8")) if timeline_path.exists() else {"startdatum":stamp,"planer":{}}
+    timeline.setdefault("startdatum",stamp)
+    history=timeline.setdefault("planer",{})
+    for item in current:
+        pid=item["id"]
+        olditem=history.get(pid)
+        if not olditem:
+            history[pid]={"namn":item["namn"],"url":item["url"],"forst_observerad":stamp,
+                          "senast_observerad":stamp,"aktiv":True,
+                          "statusperioder":[{"status":item["status"],"fran":stamp,"till":None}]}
+        else:
+            olditem["namn"]=item["namn"]
+            olditem["url"]=item["url"]
+            olditem["senast_observerad"]=stamp
+            periods=olditem["statusperioder"]
+            if not olditem.get("aktiv",True):
+                periods.append({"status":item["status"],"fran":stamp,"till":None})
+            elif periods and periods[-1]["status"]!=item["status"]:
+                periods[-1]["till"]=stamp
+                periods.append({"status":item["status"],"fran":stamp,"till":None})
+            olditem["aktiv"]=True
+    for pid,entry in history.items():
+        if pid not in new and entry.get("aktiv",True):
+            entry["aktiv"]=False
+            if entry["statusperioder"] and entry["statusperioder"][-1]["till"] is None:
+                entry["statusperioder"][-1]["till"]=stamp
+    timeline["senast_observerad"]=stamp
+    write_json(timeline_path,timeline)
     write_json(ROOT/"latest.json",snapshot)
     write_json(ROOT/"snapshots"/f"{stamp}.json",snapshot)
     changes_path=ROOT/"changes"/f"{stamp}.json"
