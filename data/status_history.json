@@ -1,0 +1,636 @@
+{
+  "startdatum": "2026-10-15",
+  "senast_observerad": "2026-10-15",
+  "planer": {
+    "050b78742db49b3db2a7": {
+      "namn": "Förslag till ny Detaljplan för Daggkåpan 2, Bergviken",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-03-06-forslag-till-ny-detaljplan-for-daggkapan-2-bergviken.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "5fb58930099cd3041378": {
+      "namn": "Förslag till ny Detaljplan för Gammelstaden 26:6, Kyrkbyn",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2022-01-20-forslag-till-ny-detaljplan-for-gammelstaden-266-kyrkbyn.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "30ae23d9e2dd4afc0ac0": {
+      "namn": "Förslag till ny Detaljplan för Gammelstaden 6:166, Kyrkbyn",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-04-12-forslag-till-ny-detaljplan-for-gammelstaden-6166-kyrkbyn.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "65aa2268fac694daaf4e": {
+      "namn": "Förslag till ny Detaljplan för Hajen 7, Centrum",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-13-forslag-till-ny-detaljplan-for-hajen-7-centrum.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "aba9f073100f30200c61": {
+      "namn": "Förslag till ny Detaljplan för Riga 1:16, Dalbo",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-09-27-forslag-till-ny-detaljplan-for-riga-116-dalbo.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "7acb58d55567b4526f8b": {
+      "namn": "Förslag till ny Detaljplan för del Notviken, del av Notviken 4:40, Cylindern och Vagnen",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2022-08-29-forslag-till-ny-detaljplan-for-del-notviken-del-av-notviken-440-cylindern-och-vagnen.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "247527cddad8193d289e": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, Fjärilen 3",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-11-03-forslag-till-ny-detaljplan-for-del-av-centrum-fjarilen-3.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "4d1a7a77dc73a52b5ef6": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, Hägern 14 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-11-22-forslag-till-ny-detaljplan-for-del-av-centrum-hagern-14-m.fl..html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "42114307df07e3289e0a": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, Räven 20",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2020-11-11-forslag-till-ny-detaljplan-for-del-av-centrum-raven-20.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "e9cd6537107a1782a244": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, Svalan 9",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2021-04-22-forslag-till-ny-detaljplan-for-del-av-centrum-svalan-9.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "663331eae2d51f362c3e": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, del av Bävern 1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2020-08-20-forslag-till-ny-detaljplan-for-del-av-centrum-del-av-bavern-1.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "2ce4bda405401543d38d": {
+      "namn": "Förslag till ny Detaljplan för del av Centrum, del av Gültzauudden, del av Innerstaden 2:1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2019-09-16-forslag-till-ny-detaljplan-for-del-av-centrum-del-av-gultzauudden-del-av-innerstaden-21.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "802ecd7ed3d2dc620ba7": {
+      "namn": "Förslag till ny Detaljplan för del av Hertsön 11:1 m fl",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-04-22-forslag-till-ny-detaljplan-for-del-av-hertson-111-m-fl.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "b73fc9edfb644e412df4": {
+      "namn": "Förslag till ny Detaljplan för del av Hertsön 11:1 och 20:1, Hertsöheden del 1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-01-23-forslag-till-ny-detaljplan-for-del-av-hertson-111-och-201-hertsoheden-del-1.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Antagande",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "1b50bed0aef14559b6d8": {
+      "namn": "Förslag till ny Detaljplan för del av Kallax, Kallax 17:1 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2019-09-17-forslag-till-ny-detaljplan-for-del-av-kallax-kallax-171-m.fl..html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "2d7cf79669226a5e1d02": {
+      "namn": "Förslag till ny Detaljplan för del av Kronan, Kikaren, Bärmesen m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-04-29-forslag-till-ny-detaljplan-for-del-av-kronan-kikaren-barmesen-m.fl..html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "2bbd5a01b36492e715f6": {
+      "namn": "Förslag till ny Detaljplan för del av Kronan, Logementet 1, Skidan 1 och del av Kronan 1:1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-04-29-forslag-till-ny-detaljplan-for-del-av-kronan-logementet-1-skidan-1-och-del-av-kronan-11.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "abba7b8ed452724dcd55": {
+      "namn": "Förslag till ny Detaljplan för del av Måttsund, del av Måttsund 22:1, Lillvikholmen",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2021-03-24-forslag-till-ny-detaljplan-for-del-av-mattsund-del-av-mattsund-221-lillvikholmen.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "2873f6921da15087778a": {
+      "namn": "Förslag till ny Detaljplan för del av Notviken 4:40 och del av Storheden 1:1, Ektjärn 2",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-10-24-forslag-till-ny-detaljplan-for-del-av-notviken-440-och-del-av-storheden-11-ektjarn-2.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Antagande",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "f2ef95469383fffddf1e": {
+      "namn": "Förslag till ny Detaljplan för del av Rutvik 3:16 m.fl. Bostäder",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-03-06-forslag-till-ny-detaljplan-for-del-av-rutvik-316-m.fl.-bostader.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "efa45ad3f699eaa9f6e2": {
+      "namn": "Förslag till ny Detaljplan för del av Rutvik 3:16 m.fl. Rutvik Östra arbetsplatsområde",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-06-27-forslag-till-ny-detaljplan-for-del-av-rutvik-316-m.fl.-rutvik-ostra-arbetsplatsomrade.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "354b7fa931ae15395a7f": {
+      "namn": "Förslag till ny Detaljplan för del av Stören 17 och Innerstaden 2:28",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-11-12-forslag-till-ny-detaljplan-for-del-av-storen-17-och-innerstaden-228.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "82ec2e0abfeb69b2573d": {
+      "namn": "Förslag till ny Detaljplan för del av Sunderbyn, Sunderbyn 1:19",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-11-03-forslag-till-ny-detaljplan-for-del-av-sunderbyn-sunderbyn-119.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "3640d5991964ee3b7649": {
+      "namn": "Förslag till ny Detaljplan för del av Svartön, del av Svartön 18:20 m.fl. Uddebo",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-03-31-forslag-till-ny-detaljplan-for-del-av-svarton-del-av-svarton-1820---m.fl.-uddebo.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "7f54e84535f77a600cda": {
+      "namn": "Förslag till ny Detaljplan för del av centrum, Katten 6",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-12-04-forslag-till-ny-detaljplan-for-del-av-centrum-katten-6.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Överklagade",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "b86171359ee6aa35d08d": {
+      "namn": "Förslag till ny Detaljplan för del av fastigheten Svartöstaden 18:17 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-03-31-forslag-till-ny-detaljplan-for-del-av-fastigheten-svartostaden-1817-m.fl..html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "4b96398a3d28ada86a9f": {
+      "namn": "Förslag till ny Detaljplan för fastigheten Mjölkudden 3:11 och Skepparen 5",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-08-16-forslag-till-ny-detaljplan-for-fastigheten-mjolkudden-311-och-skepparen-5.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "6f56036d45d5442025c9": {
+      "namn": "Förslag till ny detaljplan för Antnäs 2:15 och del av Antnäs 1:29",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-05-07-forslag-till-ny-detaljplan-for-antnas-215-och-del-av-antnas-129.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "61f1be07c20ba919bab7": {
+      "namn": "Förslag till ny detaljplan för Sundsgården 4, Östermalm",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-10-29-forslag-till-ny-detaljplan-for-sundsgarden-4-ostermalm.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "d7790132b48ba5e7349f": {
+      "namn": "Förslag till ny detaljplan för Växthuset 6 och 7 samt del av Bredviken 11:107",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-21-forslag-till-ny-detaljplan-for-vaxthuset-6-och-7-samt-del-av-bredviken-11107.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "8dec310beac9316f426d": {
+      "namn": "Förslag till ny detaljplan för del av Bergnäset 1:1, marinområdet",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-02-26-forslag-till-ny-detaljplan-for-del-av-bergnaset-11-marinomradet.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "0e76d2bcc66e0601e9b2": {
+      "namn": "Förslag till ny detaljplan för del av Centrum, Isbrytaren 1:2",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-09-16-forslag-till-ny-detaljplan-for-del-av-centrum-isbrytaren-12.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "94a4938310cca2214169": {
+      "namn": "Förslag till ny detaljplan för del av Hertsön 11:1, mellanområdet",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-21-forslag-till-ny-detaljplan-for-del-av-hertson-111-mellanomradet.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "338ac10e11b76a309798": {
+      "namn": "Förslag till ny detaljplan för del av Mjölkudden, Mjölkudden 3:13 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-06-09-forslag-till-ny-detaljplan-for-del-av-mjolkudden-mjolkudden-313-m.fl..html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Överklagade",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "076407f92b2ade99ac36": {
+      "namn": "Förslag till ny detaljplan för del av Porsön 1:3, del av Ytterviken 17:32 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-11-17-forslag-till-ny-detaljplan-for-del-av-porson-13-del-av-ytterviken-1732-m.fl..html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "d54515bad5d9f0e322f4": {
+      "namn": "Förslag till ny detaljplan för del av Rörbäck, Rörbäcken 1:63 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-07-07-forslag-till-ny-detaljplan-for-del-av-rorback-rorbacken-163-m.fl..html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "ae7b722bbf2c983e997c": {
+      "namn": "Förslag till ny detaljplan för del av Skutviken, Vattenormen 1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-21-forslag-till-ny-detaljplan-for-del-av-skutviken-vattenormen-1.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "b8f2a92599a847356d57": {
+      "namn": "Förslag till ny detaljplan för del av Småskär, del av Småskären 19:1, Kyrkviken",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-11-18-forslag-till-ny-detaljplan-for-del-av-smaskar-del-av-smaskaren-191-kyrkviken.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "5c0144e4854a2a5dbda3": {
+      "namn": "Förslag till ny detaljplan för del av Stadsön 1:120",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-03-13-forslag-till-ny-detaljplan-for-del-av-stadson-1120.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "278749d6dc8c83d1d2cb": {
+      "namn": "Förslag till ny detaljplan för del av Stadsön 1:857, Kyrkåkra 2",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-21-forslag-till-ny-detaljplan-for-del-av-stadson-1857-kyrkakra-2.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "eca7b70ef2aa5a34095b": {
+      "namn": "Förslag till ny detaljplan för del av Verdandi 1 och del av Lövskatan 9:1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-03-25-forslag-till-ny-detaljplan-for-del-av-verdandi-1-och-del-av-lovskatan-91.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "1442a690263c71d34950": {
+      "namn": "Förslag till ny detaljplan för del av del av Kungsfågeln 5",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-03-13-forslag-till-ny-detaljplan-for-del-av-del-av-kungsfageln-5.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "34554f92ae813e8799e4": {
+      "namn": "Förslag till planprogram för Luleå Centralstation och Östra stranden",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-02-25-forslag-till-planprogram-for-lulea-centralstation-och-ostra-stranden.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "228478d6a891fbaf769a": {
+      "namn": "Förslag till ändring av detaljplan för del av Bilen 23",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-03-13-forslag-till-andring-av-detaljplan-for-del-av-bilen-23.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Under arbete",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    },
+    "d3c5eef034e1c968dee0": {
+      "namn": "Förslag till ändring av stadsplan för Skepparen m.fl. (A273)",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-02-26-forslag-till-andring-av-stadsplan-for-skepparen-m.fl.-a273.html",
+      "forst_observerad": "2026-10-15",
+      "senast_observerad": "2026-10-15",
+      "aktiv": true,
+      "statusperioder": [
+        {
+          "status": "Överklagade",
+          "fran": "2026-10-15",
+          "till": null
+        }
+      ]
+    }
+  }
+}
