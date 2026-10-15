@@ -88,6 +88,28 @@ def candidates(soup,base):
                       "planprocess":description,"url":url,"kalla":base})
     return cards
 
+def enrich_cards(cards):
+    """Read each linked plan page; never infer an administrative area from a title."""
+    for i,card in enumerate(cards,1):
+        try:
+            soup=fetch(card["url"])
+            main=soup.select_one("main") or soup.select_one("#content") or soup
+            body=txt(main)
+            if not card["arendenummer"]:
+                match=RX.search(body)
+                if match:card["arendenummer"]=match.group(0).replace(" ","")
+            # Only use explicitly labelled area/locality fields.
+            for el in main.find_all(["dt","th","strong","b"]):
+                key=txt(el).lower().strip(": ")
+                if key in ("område","geografiskt område","stadsdel","plats"):
+                    sibling=el.find_next_sibling(["dd","td","span"])
+                    if sibling and 0<len(txt(sibling))<100:card["omrade"]=txt(sibling)
+        except Exception as e:
+            print(f"Varning: komplettering {card['url']}: {e}",flush=True)
+        if i%10==0:print(f"Komplettering {i}/{len(cards)}",flush=True)
+        time.sleep(.12)
+    return cards
+
 def collect():
     errors=[]
     for source in (BASE,MIRROR):
@@ -101,7 +123,7 @@ def collect():
             if expected is None:raise RuntimeError("Kan inte verifiera förväntat antal planer")
             if len(cards)!=expected:raise RuntimeError(f"Endast {len(cards)} av {expected} planer hämtade")
             if len({x["url"] for x in cards})!=len(cards):raise RuntimeError("Dubbletter i källans URL:er")
-            return cards,source,errors
+            return enrich_cards(cards),source,errors
         except Exception as e:errors.append(f"{source}: {e}")
     raise RuntimeError("Ingen tillförlitlig komplett inventering: "+"; ".join(errors[:12]))
 
@@ -122,7 +144,7 @@ def main():
     for planid,x in new.items():
         if planid not in old:events.append({"typ":"ny","namn":x["namn"],"url":x["url"],"nytt":x})
         else:
-            diff={k:{"tidigare":old[planid].get(k),"nu":x.get(k)} for k in ("namn","arendenummer","status","planprocess") if old[url].get(k)!=x.get(k)}
+            diff={k:{"tidigare":old[planid].get(k),"nu":x.get(k)} for k in ("namn","arendenummer","omrade","status","planprocess") if old[planid].get(k)!=x.get(k)}
             if diff:events.append({"typ":"andrad","namn":x["namn"],"url":x["url"],"andringar":diff})
     for planid,x in old.items():
         if planid not in new:events.append({"typ":"saknas_i_listan","namn":x["namn"],"url":x["url"]})
@@ -131,7 +153,13 @@ def main():
     snapshot={"hamtad_utc":now,"kallista":source,"antal":len(current),"planer":current,"varningar":errors}
     write_json(ROOT/"latest.json",snapshot)
     write_json(ROOT/"snapshots"/f"{stamp}.json",snapshot)
-    write_json(ROOT/"changes"/f"{stamp}.json",{"datum":stamp,"forsta_matning":not bool(previous),"andringar":events})
+    changes_path=ROOT/"changes"/f"{stamp}.json"
+    if changes_path.exists():
+        old_changes=json.loads(changes_path.read_text(encoding="utf-8"))
+        if old_changes.get("forsta_matning"):
+            # Keep the first-day baseline intact on a same-day rerun.
+            changes_path=ROOT/"changes"/f"{stamp}-{datetime.now(timezone.utc).strftime('%H%M%S')}.json"
+    write_json(changes_path,{"datum":stamp,"forsta_matning":not bool(previous),"andringar":events})
     with (ROOT/"latest.csv").open("w",encoding="utf-8-sig",newline="") as f:
         writer=csv.DictWriter(f,fieldnames=["id","arendenummer","namn","omrade","status","planprocess","url","kalla"],delimiter=";")
         writer.writeheader();writer.writerows(current)
