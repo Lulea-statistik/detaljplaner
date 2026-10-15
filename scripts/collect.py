@@ -1,0 +1,122 @@
+#!/usr/bin/env python3
+"""Veckovis inventering av kommunens pågående detaljplaner."""
+import csv, hashlib, json, os, re, sys, time
+from datetime import datetime, timezone
+from pathlib import Path
+from urllib.parse import urljoin, urlparse
+import requests
+from bs4 import BeautifulSoup
+
+BASE="https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
+MIRROR=BASE.replace("www.lulea.se","gymnasieskola.lulea.se")
+ROOT=Path("data")
+RX=re.compile(r"\b(?:KLF|KS|SBN|SBK|PL|DNR)[ -]?\d{4}\s*[/:-]\s*\d+\b",re.I)
+STAGES=["laga kraft","antagen","antagande","granskning","samråd","under arbete"]
+S=requests.Session()
+S.headers.update({"User-Agent":"Lulea-statistik-detaljplaner/1.0 (public research; weekly request)","Accept-Language":"sv-SE,sv;q=0.9"})
+
+def txt(el):
+    return " ".join(el.get_text(" ",strip=True).split()) if el else ""
+def fetch(url):
+    r=S.get(url,timeout=35);r.raise_for_status()
+    return BeautifulSoup(r.text,"html.parser")
+def record(url,title="",area="",label=""):
+    soup=fetch(url)
+    main=soup.select_one("main") or soup.select_one("#content") or soup
+    h=main.select_one("h1")
+    title=txt(h) or title
+    content=txt(main)
+    case=RX.search(content)
+    stage=""
+    heading=main.find(string=re.compile("Här befinner vi oss i planprocessen",re.I))
+    if heading:
+        parent=heading.find_parent(["h2","h3","h4"])
+        snippets=[]
+        for nxt in (parent or heading.parent).next_siblings:
+            if getattr(nxt,"name",None) in ("h2","h3"):break
+            snippets.append(txt(nxt) if getattr(nxt,"name",None) else str(nxt).strip())
+            if len(" ".join(snippets))>1400:break
+        stage=" ".join(" ".join(snippets).split())[:900]
+    if not stage:
+        stage=label
+    # Do not infer administrative phase from narrative unless the municipality explicitly states one.
+    return {"id":case.group(0).replace(" ","") if case else hashlib.sha256(url.encode()).hexdigest()[:14],
+            "arendenummer":case.group(0).replace(" ","") if case else "",
+            "namn":title,"omrade":area,"status":label or "Ej angiven",
+            "planprocess":stage,"url":url,"kalla":url}
+
+def candidates(soup,base):
+    """Follow direct plan-card links; do not mistake navigation or PDF documents for plans."""
+    result={}
+    for a in soup.select("a[href]"):
+        url=urljoin(base,a["href"]).split("#")[0]
+        path=urlparse(url).path
+        if "/pagaende-detaljplaner/pagaende-planer/" not in path or not path.endswith(".html"):continue
+        if urlparse(url).hostname not in ("www.lulea.se","gymnasieskola.lulea.se","skolor.lulea.se"):continue
+        label=txt(a)
+        result[url]=label
+    return result
+
+def collect():
+    errors=[]
+    for source in (BASE,MIRROR):
+        try:
+            soup=fetch(source)
+            links=candidates(soup,source)
+            if len(links)<25:
+                errors.append(f"{source}: endast {len(links)} planlänkar");continue
+            out=[]
+            for idx,(url,label) in enumerate(links.items(),1):
+                try:
+                    item=record(url,label=label)
+                    # Cards show broad status such as 'Under arbete' before plan name.
+                    m=re.match(r"^(Under arbete|Samråd|Granskning|Antagande|Antagen|Laga kraft)\b",label,re.I)
+                    item["status"]=m.group(1) if m else "Ej angiven"
+                    out.append(item)
+                except Exception as e:
+                    errors.append(f"{url}: {e}")
+                if idx%10==0:print(f"Hämtat {idx}/{len(links)}",flush=True)
+                time.sleep(.15)
+            if len(out)<max(25,int(len(links)*.85)):
+                raise RuntimeError(f"Endast {len(out)}/{len(links)} plansidor hämtades")
+            return out,source,errors
+        except Exception as e: errors.append(f"{source}: {e}")
+    raise RuntimeError("Ingen tillförlitlig komplett inventering: "+"; ".join(errors[:12]))
+
+def write_json(p,obj):
+    p.parent.mkdir(parents=True,exist_ok=True)
+    p.write_text(json.dumps(obj,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+
+def main():
+    current,source,errors=collect()
+    current.sort(key=lambda x:(x["omrade"],x["namn"],x["id"]))
+    if len({x["url"] for x in current})!=len(current):raise RuntimeError("Dubbletter bland plan-URL:er")
+    prevfile=ROOT/"latest.json"
+    previous=json.loads(prevfile.read_text(encoding="utf-8"))["planer"] if prevfile.exists() else []
+    # Guard: large drops require manual review; do not overwrite a valid last snapshot.
+    if previous and len(current)<len(previous)*.8:raise RuntimeError("Antalet planer föll kraftigt; avbryter för manuell kontroll")
+    old={x["url"]:x for x in previous};new={x["url"]:x for x in current}
+    events=[]
+    for url,x in new.items():
+        if url not in old:events.append({"typ":"ny","namn":x["namn"],"url":url,"nytt":x})
+        else:
+            diff={k:{"tidigare":old[url].get(k),"nu":x.get(k)} for k in ("namn","arendenummer","status","planprocess") if old[url].get(k)!=x.get(k)}
+            if diff:events.append({"typ":"andrad","namn":x["namn"],"url":url,"andringar":diff})
+    for url,x in old.items():
+        if url not in new:events.append({"typ":"saknas_i_listan","namn":x["namn"],"url":url})
+    now=datetime.now(timezone.utc).isoformat(timespec="seconds")
+    stamp=now[:10]
+    snapshot={"hamtad_utc":now,"kallista":source,"antal":len(current),"planer":current,"varningar":errors}
+    write_json(ROOT/"latest.json",snapshot)
+    write_json(ROOT/"snapshots"/f"{stamp}.json",snapshot)
+    write_json(ROOT/"changes"/f"{stamp}.json",{"datum":stamp,"forsta_matning":not bool(previous),"andringar":events})
+    with (ROOT/"latest.csv").open("w",encoding="utf-8-sig",newline="") as f:
+        writer=csv.DictWriter(f,fieldnames=["id","arendenummer","namn","omrade","status","planprocess","url","kalla"],delimiter=";")
+        writer.writeheader();writer.writerows(current)
+    summary=f"# Veckokontroll {stamp}\n\n- Antal observerade planer: **{len(current)}**\n- Förändringar: **{len(events)}**\n- Ursprung: {source}\n- Tidpunkt (UTC): {now}\n"
+    if not previous:summary+="\nFörsta observationen: förändringar är nya poster i baslinjen, inte kommunala nytillkomna planer.\n"
+    if errors:summary+="\n## Hämtningsvarningar\n"+"\n".join("- "+e for e in errors[:15])+"\n"
+    summary+="\n## Förändringar\n"+"\n".join(f"- {e['typ']}: [{e['namn']}]({e['url']})" for e in events)+"\n"
+    (ROOT/"CHANGELOG.md").write_text(summary,encoding="utf-8")
+    print(f"OK {len(current)} planer; {len(events)} förändringar",flush=True)
+if __name__=="__main__":main()
