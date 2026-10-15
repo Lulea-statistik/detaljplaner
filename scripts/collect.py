@@ -196,7 +196,7 @@ def main():
         entry["namn"]=item["namn"]
         entry["url"]=item["url"]
         existing=entry["versioner"]
-        if not existing or existing[-1]["hash"]!=fingerprint:
+        if not existing or (existing[-1].get("hash") or hashlib.sha256(" ".join(unicodedata.normalize("NFKC",existing[-1]["text"]).split()).encode("utf-8")).hexdigest())!=fingerprint:
             if existing and existing[-1]["till"] is None:
                 existing[-1]["till"]=stamp
             existing.append({"version":len(existing)+1,"fran":stamp,"till":None,
