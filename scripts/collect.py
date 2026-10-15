@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 BASE="https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
 MIRROR=BASE.replace("www.lulea.se","gymnasieskola.lulea.se")
@@ -20,6 +21,26 @@ def txt(el):
 def fetch(url):
     r=S.get(url,timeout=35);r.raise_for_status()
     return BeautifulSoup(r.text,"html.parser")
+
+def fetch_rendered(url):
+    """Render asynchronously loaded municipal listings with a real browser."""
+    with sync_playwright() as p:
+        browser=p.chromium.launch(headless=True)
+        page=browser.new_page(locale="sv-SE")
+        page.goto(url,wait_until="domcontentloaded",timeout=60000)
+        try:
+            page.get_by_text("Antnäs",exact=False).first.wait_for(timeout=25000)
+        except Exception:
+            pass
+        page.wait_for_timeout(3500)
+        html=page.content()
+        text=page.locator("body").inner_text()
+        browser.close()
+    from pathlib import Path
+    Path("diagnostics").mkdir(exist_ok=True)
+    Path("diagnostics/last-rendered.html").write_text(html,encoding="utf-8")
+    Path("diagnostics/last-rendered.txt").write_text(text,encoding="utf-8")
+    return BeautifulSoup(html,"html.parser")
 def record(url,title="",area="",label=""):
     soup=fetch(url)
     main=soup.select_one("main") or soup.select_one("#content") or soup
@@ -83,8 +104,9 @@ def collect():
     errors=[]
     for source in (BASE,MIRROR):
         try:
-            soup=fetch(source)
+            soup=fetch_rendered(source)
             cards=candidates(soup,source)
+            print(f'Diagnostik: {source} ger {len(cards)} planposter; Antnäs={"Antnäs" in soup.get_text()}',flush=True)
             if len(cards)<25:
                 errors.append(f"{source}: endast {len(cards)} planposter");continue
             out=[]
