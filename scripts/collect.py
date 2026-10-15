@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Veckovis inventering av kommunens pågående detaljplaner."""
-import csv, hashlib, json, os, re, sys, time
+import csv, hashlib, json, os, re, sys, time, unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -181,6 +181,31 @@ def main():
                 entry["statusperioder"][-1]["till"]=stamp
     timeline["senast_observerad"]=stamp
     write_json(timeline_path,timeline)
+    # Versions are based on the published summary/planprocess, not formal plan documents.
+    # Ignore Unicode normalization and whitespace-only differences.
+    versions_file=ROOT/"description_history.json"
+    versions=json.loads(versions_file.read_text(encoding="utf-8")) if versions_file.exists() else {"startdatum":stamp,"planer":{}}
+    version_entries=versions.setdefault("planer",{})
+    for item in current:
+        pid=item["id"]
+        desc=" ".join(unicodedata.normalize("NFKC",item.get("planprocess") or "").split())
+        if not desc:
+            continue  # Never make an empty version when the extraction fails.
+        fingerprint=hashlib.sha256(desc.encode("utf-8")).hexdigest()
+        entry=version_entries.setdefault(pid,{"namn":item["namn"],"url":item["url"],"versioner":[]})
+        entry["namn"]=item["namn"]
+        entry["url"]=item["url"]
+        existing=entry["versioner"]
+        if not existing or existing[-1]["hash"]!=fingerprint:
+            if existing and existing[-1]["till"] is None:
+                existing[-1]["till"]=stamp
+            existing.append({"version":len(existing)+1,"fran":stamp,"till":None,
+                             "text":desc,"hash":fingerprint})
+    for pid,entry in version_entries.items():
+        if pid not in new and entry["versioner"] and entry["versioner"][-1]["till"] is None:
+            entry["versioner"][-1]["till"]=stamp
+    versions["senast_observerad"]=stamp
+    write_json(versions_file,versions)
     write_json(ROOT/"latest.json",snapshot)
     write_json(ROOT/"snapshots"/f"{stamp}.json",snapshot)
     changes_path=ROOT/"changes"/f"{stamp}.json"
