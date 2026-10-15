@@ -46,41 +46,64 @@ def record(url,title="",area="",label=""):
             "planprocess":stage,"url":url,"kalla":url}
 
 def candidates(soup,base):
-    """Follow direct plan-card links; do not mistake navigation or PDF documents for plans."""
-    result={}
-    for a in soup.select("a[href]"):
-        url=urljoin(base,a["href"]).split("#")[0]
-        path=urlparse(url).path
-        if "/pagaende-detaljplaner/pagaende-planer/" not in path or not path.endswith(".html"):continue
-        if urlparse(url).hostname not in ("www.lulea.se","gymnasieskola.lulea.se","skolor.lulea.se"):continue
-        label=txt(a)
-        result[url]=label
-    return result
+    """Read the complete listing, including plan cards that are not anchor elements."""
+    container=soup.select_one("main") or soup.select_one("#content") or soup
+    # Most municipality listings group entries by area and style each plan status.
+    # Parse textual entries even when their title has no direct link.
+    text=container.get_text("\n",strip=True)
+    areas=["Antnäs","Bergnäset","Bergviken","Centrum","Dalbo","Gammelstad",
+           "Hertsön","Kallax","Kronan","Lövskatan","Måttsund","Mjölkudden",
+           "Notviken","Örnäset","Porsön","Rörbäck","Rutvik","Skärgården",
+           "Storheden","Sunderbyn","Svartön"]
+    lines=[l.strip() for l in text.splitlines() if l.strip()]
+    plan_starts=re.compile(r"^(Under arbete|Samråd|Granskning|Antagande|Antagen|Laga kraft)\b",re.I)
+    cards=[]
+    area=""
+    active=None
+    for line in lines:
+        marea=re.match(r"^("+"|".join(map(re.escape,areas))+r")\s*(?:\(\d+\))?$",line,re.I)
+        if marea:
+            if active: cards.append(active)
+            active=None
+            area=marea.group(1)
+            continue
+        m=plan_starts.match(line)
+        if m:
+            if active:cards.append(active)
+            active={"omrade":area,"status":m.group(1),"parts":[line[m.end():].strip()]}
+        elif active:
+            if line.startswith(("Du kan också se alla","Kontakt","Detaljplanekontoret","Sidan uppdaterades")):
+                cards.append(active);active=None
+            elif len(" ".join(active["parts"]))<1100:
+                active["parts"].append(line)
+    if active:cards.append(active)
+    return [c for c in cards if c["omrade"] and any("detaljplan" in x.casefold() or "planprogram" in x.casefold() or "KLF" in x for x in c["parts"])]
 
 def collect():
     errors=[]
     for source in (BASE,MIRROR):
         try:
             soup=fetch(source)
-            links=candidates(soup,source)
-            if len(links)<25:
-                errors.append(f"{source}: endast {len(links)} planlänkar");continue
+            cards=candidates(soup,source)
+            if len(cards)<25:
+                errors.append(f"{source}: endast {len(cards)} planposter");continue
             out=[]
-            for idx,(url,label) in enumerate(links.items(),1):
-                try:
-                    item=record(url,label=label)
-                    # Cards show broad status such as 'Under arbete' before plan name.
-                    m=re.match(r"^(Under arbete|Samråd|Granskning|Antagande|Antagen|Laga kraft)\b",label,re.I)
-                    item["status"]=m.group(1) if m else "Ej angiven"
-                    out.append(item)
-                except Exception as e:
-                    errors.append(f"{url}: {e}")
-                if idx%10==0:print(f"Hämtat {idx}/{len(links)}",flush=True)
-                time.sleep(.15)
-            if len(out)<max(25,int(len(links)*.85)):
-                raise RuntimeError(f"Endast {len(out)}/{len(links)} plansidor hämtades")
+            for card in cards:
+                body=" ".join(card["parts"])
+                case=RX.search(body)
+                # No direct plan URL? Preserve listing URL and the extracted text.
+                # Stable identity uses case number, otherwise area + title.
+                clean=re.sub(r"\s+"," ",body).strip()
+                title=re.split(r"\b(?:Ärendenummer|Detaljplanens ärendenummer|KLF\s*\d{4})\b",clean,maxsplit=1,flags=re.I)[0].strip()
+                identity=case.group(0).replace(" ","") if case else hashlib.sha256((card["omrade"]+"|"+title).encode()).hexdigest()[:14]
+                out.append({"id":identity,"arendenummer":case.group(0).replace(" ","") if case else "",
+                            "namn":title[:450],"omrade":card["omrade"],"status":card["status"],
+                            "planprocess":"","url":source,"kalla":source})
+            if len(out)<25:raise RuntimeError("Ofullständig planlista")
+            if len({x["id"] for x in out})!=len(out):
+                raise RuntimeError("Icke-unika planidentiteter; kräver manuell kontroll")
             return out,source,errors
-        except Exception as e: errors.append(f"{source}: {e}")
+        except Exception as e:errors.append(f"{source}: {e}")
     raise RuntimeError("Ingen tillförlitlig komplett inventering: "+"; ".join(errors[:12]))
 
 def write_json(p,obj):
@@ -90,20 +113,20 @@ def write_json(p,obj):
 def main():
     current,source,errors=collect()
     current.sort(key=lambda x:(x["omrade"],x["namn"],x["id"]))
-    if len({x["url"] for x in current})!=len(current):raise RuntimeError("Dubbletter bland plan-URL:er")
+    if len({x["id"] for x in current})!=len(current):raise RuntimeError("Dubbletter bland planidentiteter")
     prevfile=ROOT/"latest.json"
     previous=json.loads(prevfile.read_text(encoding="utf-8"))["planer"] if prevfile.exists() else []
     # Guard: large drops require manual review; do not overwrite a valid last snapshot.
     if previous and len(current)<len(previous)*.8:raise RuntimeError("Antalet planer föll kraftigt; avbryter för manuell kontroll")
-    old={x["url"]:x for x in previous};new={x["url"]:x for x in current}
+    old={x["id"]:x for x in previous};new={x["id"]:x for x in current}
     events=[]
-    for url,x in new.items():
-        if url not in old:events.append({"typ":"ny","namn":x["namn"],"url":url,"nytt":x})
+    for planid,x in new.items():
+        if planid not in old:events.append({"typ":"ny","namn":x["namn"],"url":x["url"],"nytt":x})
         else:
-            diff={k:{"tidigare":old[url].get(k),"nu":x.get(k)} for k in ("namn","arendenummer","status","planprocess") if old[url].get(k)!=x.get(k)}
-            if diff:events.append({"typ":"andrad","namn":x["namn"],"url":url,"andringar":diff})
-    for url,x in old.items():
-        if url not in new:events.append({"typ":"saknas_i_listan","namn":x["namn"],"url":url})
+            diff={k:{"tidigare":old[planid].get(k),"nu":x.get(k)} for k in ("namn","arendenummer","status","planprocess") if old[url].get(k)!=x.get(k)}
+            if diff:events.append({"typ":"andrad","namn":x["namn"],"url":x["url"],"andringar":diff})
+    for planid,x in old.items():
+        if planid not in new:events.append({"typ":"saknas_i_listan","namn":x["namn"],"url":x["url"]})
     now=datetime.now(timezone.utc).isoformat(timespec="seconds")
     stamp=now[:10]
     snapshot={"hamtad_utc":now,"kallista":source,"antal":len(current),"planer":current,"varningar":errors}
