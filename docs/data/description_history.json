@@ -1,6 +1,6 @@
 {
   "startdatum": "2026-10-15",
-  "senast_observerad": "2026-10-15",
+  "senast_observerad": "2026-10-19",
   "planer": {
     "050b78742db49b3db2a7": {
       "namn": "Förslag till ny Detaljplan för Daggkåpan 2, Bergviken",
@@ -451,9 +451,16 @@
         {
           "version": 1,
           "fran": "2026-10-15",
-          "till": null,
+          "till": "2026-10-19",
           "text": "Samråd: Utökning av Rörbäcks camping och hamn, KLF 2023/1165",
           "hash": ""
+        },
+        {
+          "version": 2,
+          "fran": "2026-10-19",
+          "till": null,
+          "text": "Utökning av Rörbäcks camping och hamn, KLF 2023/1165",
+          "hash": "f9b2cf09e6f0306168451c604abc2753d9a61b8e4bd51d1e41f89ca720047193"
         }
       ]
     },

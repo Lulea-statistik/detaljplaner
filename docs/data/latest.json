@@ -1,5 +1,5 @@
 {
-  "hamtad_utc": "2026-10-15T06:39:27+00:00",
+  "hamtad_utc": "2026-10-19T13:26:21+00:00",
   "kallista": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html",
   "antal": 45,
   "planer": [
@@ -315,7 +315,7 @@
     },
     {
       "id": "0e76d2bcc66e0601e9b2",
-      "arendenummer": "",
+      "arendenummer": "KLF2026/509",
       "namn": "Förslag till ny detaljplan för del av Centrum, Isbrytaren 1:2",
       "omrade": "",
       "status": "Under arbete",
@@ -345,7 +345,7 @@
     },
     {
       "id": "076407f92b2ade99ac36",
-      "arendenummer": "",
+      "arendenummer": "KLF-2025/824",
       "namn": "Förslag till ny detaljplan för del av Porsön 1:3, del av Ytterviken 17:32 m.fl.",
       "omrade": "",
       "status": "Under arbete",
@@ -359,7 +359,7 @@
       "namn": "Förslag till ny detaljplan för del av Rörbäck, Rörbäcken 1:63 m.fl.",
       "omrade": "",
       "status": "Under arbete",
-      "planprocess": "Samråd: Utökning av Rörbäcks camping och hamn, KLF 2023/1165",
+      "planprocess": "Utökning av Rörbäcks camping och hamn, KLF 2023/1165",
       "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-07-07-forslag-till-ny-detaljplan-for-del-av-rorback-rorbacken-163-m.fl..html",
       "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
     },
@@ -385,7 +385,7 @@
     },
     {
       "id": "5c0144e4854a2a5dbda3",
-      "arendenummer": "",
+      "arendenummer": "KLF2026-214",
       "namn": "Förslag till ny detaljplan för del av Stadsön 1:120",
       "omrade": "",
       "status": "Under arbete",
@@ -405,7 +405,7 @@
     },
     {
       "id": "eca7b70ef2aa5a34095b",
-      "arendenummer": "",
+      "arendenummer": "KLF2025-924",
       "namn": "Förslag till ny detaljplan för del av Verdandi 1 och del av Lövskatan 9:1",
       "omrade": "",
       "status": "Under arbete",
@@ -415,7 +415,7 @@
     },
     {
       "id": "1442a690263c71d34950",
-      "arendenummer": "",
+      "arendenummer": "KLF2026-212",
       "namn": "Förslag till ny detaljplan för del av del av Kungsfågeln 5",
       "omrade": "",
       "status": "Under arbete",
@@ -425,7 +425,7 @@
     },
     {
       "id": "34554f92ae813e8799e4",
-      "arendenummer": "",
+      "arendenummer": "KLF2025/1386",
       "namn": "Förslag till planprogram för Luleå Centralstation och Östra stranden",
       "omrade": "",
       "status": "Under arbete",
@@ -435,7 +435,7 @@
     },
     {
       "id": "228478d6a891fbaf769a",
-      "arendenummer": "",
+      "arendenummer": "KLF2026-206",
       "namn": "Förslag till ändring av detaljplan för del av Bilen 23",
       "omrade": "",
       "status": "Under arbete",
@@ -445,7 +445,7 @@
     },
     {
       "id": "d3c5eef034e1c968dee0",
-      "arendenummer": "",
+      "arendenummer": "KLF2026-38",
       "namn": "Förslag till ändring av stadsplan för Skepparen m.fl. (A273)",
       "omrade": "",
       "status": "Överklagade",
