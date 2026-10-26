@@ -1,0 +1,80 @@
+{
+  "datum": "2026-10-26",
+  "forsta_matning": false,
+  "andringar": [
+    {
+      "typ": "andrad",
+      "namn": "Förslag till ny Detaljplan för del av Hertsön 11:1 och 20:1, Hertsöheden del 1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-01-23-forslag-till-ny-detaljplan-for-del-av-hertson-111-och-201-hertsoheden-del-1.html",
+      "andringar": {
+        "status": {
+          "tidigare": "Antagande",
+          "nu": "Antagen"
+        }
+      }
+    },
+    {
+      "typ": "andrad",
+      "namn": "Förslag till ny Detaljplan för del av Notviken 4:40 och del av Storheden 1:1, Ektjärn 2",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2024-10-24-forslag-till-ny-detaljplan-for-del-av-notviken-440-och-del-av-storheden-11-ektjarn-2.html",
+      "andringar": {
+        "status": {
+          "tidigare": "Antagande",
+          "nu": "Laga kraft"
+        }
+      }
+    },
+    {
+      "typ": "andrad",
+      "namn": "Förslag till ny Detaljplan för del av centrum, Katten 6",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-12-04-forslag-till-ny-detaljplan-for-del-av-centrum-katten-6.html",
+      "andringar": {
+        "status": {
+          "tidigare": "Överklagade",
+          "nu": "Laga kraft"
+        },
+        "planprocess": {
+          "tidigare": "Överklagad: Pröva förutsättningar för ny bebyggelse, KLF2023-1459",
+          "nu": "LAGA KRAFT: Pröva förutsättningar för ny bebyggelse, KLF2023-1459"
+        }
+      }
+    },
+    {
+      "typ": "andrad",
+      "namn": "Förslag till ny detaljplan för del av Mjölkudden, Mjölkudden 3:13 m.fl.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-06-09-forslag-till-ny-detaljplan-for-del-av-mjolkudden-mjolkudden-313-m.fl..html",
+      "andringar": {
+        "status": {
+          "tidigare": "Överklagade",
+          "nu": "Laga kraft"
+        },
+        "planprocess": {
+          "tidigare": "ÖVERKLAGAD: Förtätning med bostäder, KLF2023/1747",
+          "nu": "LAGA KRAFT: Förtätning med bostäder, KLF2023/1747"
+        }
+      }
+    },
+    {
+      "typ": "andrad",
+      "namn": "Förslag till ändring av detaljplan för del av Bilen 23",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-03-13-forslag-till-andring-av-detaljplan-for-del-av-bilen-23.html",
+      "andringar": {
+        "status": {
+          "tidigare": "Under arbete",
+          "nu": "På samråd"
+        }
+      }
+    },
+    {
+      "typ": "andrad",
+      "namn": "Förslag till ändring av stadsplan för Skepparen m.fl. (A273)",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-02-26-forslag-till-andring-av-stadsplan-for-skepparen-m.fl.-a273.html",
+      "andringar": {
+        "status": {
+          "tidigare": "Överklagade",
+          "nu": "Överklagad"
+        }
+      }
+    }
+  ]
+}

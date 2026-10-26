@@ -1,6 +1,6 @@
 {
   "startdatum": "2026-10-15",
-  "senast_observerad": "2026-10-19",
+  "senast_observerad": "2026-10-26",
   "planer": {
     "050b78742db49b3db2a7": {
       "namn": "Förslag till ny Detaljplan för Daggkåpan 2, Bergviken",
@@ -321,9 +321,16 @@
         {
           "version": 1,
           "fran": "2026-10-15",
-          "till": null,
+          "till": "2026-10-26",
           "text": "Överklagad: Pröva förutsättningar för ny bebyggelse, KLF2023-1459",
           "hash": ""
+        },
+        {
+          "version": 2,
+          "fran": "2026-10-26",
+          "till": null,
+          "text": "LAGA KRAFT: Pröva förutsättningar för ny bebyggelse, KLF2023-1459",
+          "hash": "dbf8d50c3161d6bb521a7bc1dfa3f3f539e63b479048b01093fd68357cf811e6"
         }
       ]
     },
@@ -438,9 +445,16 @@
         {
           "version": 1,
           "fran": "2026-10-15",
-          "till": null,
+          "till": "2026-10-26",
           "text": "ÖVERKLAGAD: Förtätning med bostäder, KLF2023/1747",
           "hash": ""
+        },
+        {
+          "version": 2,
+          "fran": "2026-10-26",
+          "till": null,
+          "text": "LAGA KRAFT: Förtätning med bostäder, KLF2023/1747",
+          "hash": "e100f55cea555944b4b88c3d9804e4c1c629d6997f2e362b9637c6a985e45a47"
         }
       ]
     },
