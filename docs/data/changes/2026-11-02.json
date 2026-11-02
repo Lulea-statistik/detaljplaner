@@ -1,0 +1,61 @@
+{
+  "datum": "2026-11-02",
+  "forsta_matning": false,
+  "andringar": [
+    {
+      "typ": "ny",
+      "namn": "Antagande: Förslag till planprogram för Luleå Centralstation och Östra stranden",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-02-25-antagande-forslag-till-planprogram-for-lulea-centralstation-och-ostra-stranden.html",
+      "nytt": {
+        "id": "3a0d37bf170658f9c353",
+        "arendenummer": "KLF2025/1386",
+        "namn": "Antagande: Förslag till planprogram för Luleå Centralstation och Östra stranden",
+        "omrade": "",
+        "status": "Under arbete",
+        "planprocess": "Syftet med planprogrammet är att utveckla Luleå Centralstation som en attraktiv bytesnod för hållbart resande och att hantera stadsutveckling i stationsområdet och Östra stranden som en helhet.",
+        "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-02-25-antagande-forslag-till-planprogram-for-lulea-centralstation-och-ostra-stranden.html",
+        "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
+      }
+    },
+    {
+      "typ": "ny",
+      "namn": "Förslag till ny Detaljplan för del av centrum, Hajen 7 och del av Innerstaden 2:1",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-13-forslag-till-ny-detaljplan-for-del-av-centrum-hajen-7-och-del-av-innerstaden-21.html",
+      "nytt": {
+        "id": "42d4f0e1fd07d0e62332",
+        "arendenummer": "KLF2024/1853",
+        "namn": "Förslag till ny Detaljplan för del av centrum, Hajen 7 och del av Innerstaden 2:1",
+        "omrade": "",
+        "status": "På samråd",
+        "planprocess": "Se över förutsättningarna för livsmedelsbutik och kontor. Ärendenummer: KLF2024/1853",
+        "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-13-forslag-till-ny-detaljplan-for-del-av-centrum-hajen-7-och-del-av-innerstaden-21.html",
+        "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
+      }
+    },
+    {
+      "typ": "ny",
+      "namn": "Förslag till ny detaljplan för del av Hertsön 11:1 m. fl",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-10-30-forslag-till-ny-detaljplan-for-del-av-hertson-111-m.-fl.html",
+      "nytt": {
+        "id": "cab4ab6e7486a08a4092",
+        "arendenummer": "KLF2025/2031",
+        "namn": "Förslag till ny detaljplan för del av Hertsön 11:1 m. fl",
+        "omrade": "",
+        "status": "Under arbete",
+        "planprocess": "Utreda etablering av livsmedelsbutik och centrumverksamhet.",
+        "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-10-30-forslag-till-ny-detaljplan-for-del-av-hertson-111-m.-fl.html",
+        "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
+      }
+    },
+    {
+      "typ": "saknas_i_listan",
+      "namn": "Förslag till ny Detaljplan för Hajen 7, Centrum",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-13-forslag-till-ny-detaljplan-for-hajen-7-centrum.html"
+    },
+    {
+      "typ": "saknas_i_listan",
+      "namn": "Förslag till planprogram för Luleå Centralstation och Östra stranden",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-02-25-forslag-till-planprogram-for-lulea-centralstation-och-ostra-stranden.html"
+    }
+  ]
+}

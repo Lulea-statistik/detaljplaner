@@ -1,8 +1,18 @@
 {
-  "hamtad_utc": "2026-10-26T13:11:35+00:00",
+  "hamtad_utc": "2026-11-02T16:05:13+00:00",
   "kallista": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html",
-  "antal": 45,
+  "antal": 46,
   "planer": [
+    {
+      "id": "3a0d37bf170658f9c353",
+      "arendenummer": "KLF2025/1386",
+      "namn": "Antagande: Förslag till planprogram för Luleå Centralstation och Östra stranden",
+      "omrade": "",
+      "status": "Under arbete",
+      "planprocess": "Syftet med planprogrammet är att utveckla Luleå Centralstation som en attraktiv bytesnod för hållbart resande och att hantera stadsutveckling i stationsområdet och Östra stranden som en helhet.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-02-25-antagande-forslag-till-planprogram-for-lulea-centralstation-och-ostra-stranden.html",
+      "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
+    },
     {
       "id": "050b78742db49b3db2a7",
       "arendenummer": "KLF2024-1056",
@@ -31,16 +41,6 @@
       "status": "Under arbete",
       "planprocess": "Möjliggöra för nytt bostadsområde, KLF 2023/1745",
       "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2023-04-12-forslag-till-ny-detaljplan-for-gammelstaden-6166-kyrkbyn.html",
-      "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
-    },
-    {
-      "id": "65aa2268fac694daaf4e",
-      "arendenummer": "KLF2024/1853",
-      "namn": "Förslag till ny Detaljplan för Hajen 7, Centrum",
-      "omrade": "",
-      "status": "Under arbete",
-      "planprocess": "Se över förutsättningarna för livsmedelsbutik, kontor och bostäder. Ärendenummer: KLF2024/1853",
-      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-13-forslag-till-ny-detaljplan-for-hajen-7-centrum.html",
       "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
     },
     {
@@ -244,6 +244,16 @@
       "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
     },
     {
+      "id": "42d4f0e1fd07d0e62332",
+      "arendenummer": "KLF2024/1853",
+      "namn": "Förslag till ny Detaljplan för del av centrum, Hajen 7 och del av Innerstaden 2:1",
+      "omrade": "",
+      "status": "På samråd",
+      "planprocess": "Se över förutsättningarna för livsmedelsbutik och kontor. Ärendenummer: KLF2024/1853",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-01-13-forslag-till-ny-detaljplan-for-del-av-centrum-hajen-7-och-del-av-innerstaden-21.html",
+      "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
+    },
+    {
       "id": "7f54e84535f77a600cda",
       "arendenummer": "KLF2023-1459",
       "namn": "Förslag till ny Detaljplan för del av centrum, Katten 6",
@@ -321,6 +331,16 @@
       "status": "Under arbete",
       "planprocess": "Bostäder och att säkerställa förutsättningarna för en långsiktigt hållbar och genomförbar utveckling av närområdet.",
       "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-09-16-forslag-till-ny-detaljplan-for-del-av-centrum-isbrytaren-12.html",
+      "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
+    },
+    {
+      "id": "cab4ab6e7486a08a4092",
+      "arendenummer": "KLF2025/2031",
+      "namn": "Förslag till ny detaljplan för del av Hertsön 11:1 m. fl",
+      "omrade": "",
+      "status": "Under arbete",
+      "planprocess": "Utreda etablering av livsmedelsbutik och centrumverksamhet.",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-10-30-forslag-till-ny-detaljplan-for-del-av-hertson-111-m.-fl.html",
       "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
     },
     {
@@ -421,16 +441,6 @@
       "status": "Under arbete",
       "planprocess": "Ändring av detaljplaner för att kunna bygga en ny sporthall i centrum",
       "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-03-13-forslag-till-ny-detaljplan-for-del-av-del-av-kungsfageln-5.html",
-      "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
-    },
-    {
-      "id": "34554f92ae813e8799e4",
-      "arendenummer": "KLF2025/1386",
-      "namn": "Förslag till planprogram för Luleå Centralstation och Östra stranden",
-      "omrade": "",
-      "status": "Under arbete",
-      "planprocess": "Syftet med planprogrammet är att utveckla Luleå Centralstation som en attraktiv bytesnod för hållbart resande och att hantera stadsutveckling i stationsområdet och Östra stranden som en helhet.",
-      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2026-02-25-forslag-till-planprogram-for-lulea-centralstation-och-ostra-stranden.html",
       "kalla": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner.html"
     },
     {
