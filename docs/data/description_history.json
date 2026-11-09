@@ -1,6 +1,6 @@
 {
   "startdatum": "2026-10-15",
-  "senast_observerad": "2026-11-02",
+  "senast_observerad": "2026-11-09",
   "planer": {
     "050b78742db49b3db2a7": {
       "namn": "Förslag till ny Detaljplan för Daggkåpan 2, Bergviken",
@@ -9,7 +9,7 @@
         {
           "version": 1,
           "fran": "2026-10-15",
-          "till": null,
+          "till": "2026-11-09",
           "text": "Pröva förutsättningar för vård- och omsorgsboende samt förskola. Ärendenummer: KLF2024-1056",
           "hash": ""
         }
@@ -178,9 +178,16 @@
         {
           "version": 1,
           "fran": "2026-10-15",
-          "till": null,
+          "till": "2026-11-09",
           "text": "Antagen: Utbyggnad av nytt bostadsområde Hertsöheden, KLF 2023-1318 Planens huvudsakliga syfte är att pröva förutsättningarna för ny bostadsbebyggelse för den allmänna bostadsförsörjningen. I detaljplanen ska mark även reserveras för tillkommande kommunala funktioner, exempelvis förskola, skola, vård- och omsorgsboende samt tillskapas möjligheter för komplementverksamheter, idrott och andra eventuella mötesplatser. Den nya bebyggelsen ska anpassas till omgivningen och befintlig natur. Hertsöheden är utpekat som framtida expansionsområde för tätorten och ska ingå i stadsdelen Hertsön. Hela Hertsöheden kommer att planläggas i flera etapper, denna detaljplan utgör den första delen. Planområdet är beläget norr om Hertsövägen i Hertsöhedens västra del, i den del som angränsar mot Hertsö centrum och Lerbäcken. Planen ger plats för ca 800 nya bostäder i blandade bostadsformer samt bland annat skola, förskola, vård- och omsorgsboende, park, idrottsplats, kompletterande verksamheter samt nya vägar. Större delen av planområdet berör mark som inte är planlagd sedan tidigare. Planområdet är ca 34 hektar stort och utgörs i sin helhet av kommunalt ägd mark. Detaljplanen har föregåtts av ett planprogram för hela Hertsöheden, godkänt i KF 2023, med tidiga avvägningar, inriktningar och övergripande mål för områdets utveckling. Dessa har varit vägledande för detaljplanen. Detaljplanen bedöms stämma överens med gällande översiktsplan. Beslut har tagits att detaljplanens genomförande kan antas medföra betydande miljöpåverkan. En miljökonsekvensbeskrivning för detaljplanen har därför tagits fram. Beslut om planuppdrag togs av kommunstyrelsens arbetsutskott (2023-10-23 § 20). Detaljplanen handläggs enligt plan- och bygglagens regler för utökat förfarande. Detta innebär att berörda sakägare ges tillfälle att lämna synpunkter på detaljplanen under ett samråd och under en granskning. Efter samrådet respektive granskning kommer inkomna synpunkter att sammanställas och besvaras i en samrådsredogörelse och i ett granskningsutlåtande. Kommunfullmäktige beslutar om antagande av detaljplanen. Här befinner vi oss i planprocessen Kommunfullmäktige beslutade 2026-09-28 § 134 att anta detaljplanen. Kommunfullmäktiges protokollsutdrag De som senast under granskningen lämnat synpunkter som inte har tillgodosetts har rätt att överklaga detaljplanen under prövningstiden efter beslut om antagande. Planförslaget har visats för granskning mellan 2026-02-20 till 2026-03-23 och samråd mellan 2025-03-06 till 2025-03-27. Handlingar Antagandehandlingar Plankarta Planbeskrivning Granskningsutlåtande Miljökonsekvensbeskrivning Särskild sammanställning av MKB Gestaltningsprogram Granskningsshandlingar Plankarta Planbeskrivning Samrådsredogörelse Miljökonsekvensbeskrivning Gestaltningsprogram Samrådshandlingar Plankarta Planbeskrivning Utredningar och underlag framtagna i samband med denna detaljplan Dagvattenutredning (2025) Dagvattenutredning komplettering (2025) Bullerutredning (2025) Riskutredning (2024) Artskyddsutredning (2025) Barnkonsekvensanalys (2025) Kumulativa effekter på artskyddet (2026) Utredningar framtagna för planprogram för Hertsöheden som utgör underlag även för denna plan Dagvattenutredning (2024) Våtmarksekologisk bedömning (2024) Geoteknisk utredning PM (2022) Geoteknisk utredning MUR (2022) Fågel och groddjursinventering som komplement till utförd NVI (2023) Naturvärden Hertsöheden sammanställning (2021) Naturinventering Hertsöheden (2013) Fördjupad grodinventering (2024) Beslutat planprogram Här hittar du en presentation av planförslaget",
           "hash": ""
+        },
+        {
+          "version": 2,
+          "fran": "2026-11-09",
+          "till": null,
+          "text": "Laga kraft: Utbyggnad av nytt bostadsområde Hertsöheden, KLF 2023-1318 Planens huvudsakliga syfte är att pröva förutsättningarna för ny bostadsbebyggelse för den allmänna bostadsförsörjningen. I detaljplanen ska mark även reserveras för tillkommande kommunala funktioner, exempelvis förskola, skola, vård- och omsorgsboende samt tillskapas möjligheter för komplementverksamheter, idrott och andra eventuella mötesplatser. Den nya bebyggelsen ska anpassas till omgivningen och befintlig natur. Hertsöheden är utpekat som framtida expansionsområde för tätorten och ska ingå i stadsdelen Hertsön. Hela Hertsöheden kommer att planläggas i flera etapper, denna detaljplan utgör den första delen. Planområdet är beläget norr om Hertsövägen i Hertsöhedens västra del, i den del som angränsar mot Hertsö centrum och Lerbäcken. Planen ger plats för ca 800 nya bostäder i blandade bostadsformer samt bland annat skola, förskola, vård- och omsorgsboende, park, idrottsplats, kompletterande verksamheter samt nya vägar. Större delen av planområdet berör mark som inte är planlagd sedan tidigare. Planområdet är ca 34 hektar stort och utgörs i sin helhet av kommunalt ägd mark. Detaljplanen har föregåtts av ett planprogram för hela Hertsöheden, godkänt i KF 2023, med tidiga avvägningar, inriktningar och övergripande mål för områdets utveckling. Dessa har varit vägledande för detaljplanen. Detaljplanen bedöms stämma överens med gällande översiktsplan. Beslut har tagits att detaljplanens genomförande kan antas medföra betydande miljöpåverkan. En miljökonsekvensbeskrivning för detaljplanen har därför tagits fram. Beslut om planuppdrag togs av kommunstyrelsens arbetsutskott (2023-10-23 § 20). Detaljplanen handläggs enligt plan- och bygglagens regler för utökat förfarande. Detta innebär att berörda sakägare ges tillfälle att lämna synpunkter på detaljplanen under ett samråd och under en granskning. Efter samrådet respektive granskning kommer inkomna synpunkter att sammanställas och besvaras i en samrådsredogörelse och i ett granskningsutlåtande. Kommunfullmäktige beslutar om antagande av detaljplanen. Här befinner vi oss i planprocessen Kommunfullmäktige beslutade 2026-09-28 § 134 att anta detaljplanen. Kommunfullmäktiges protokollsutdrag Detaljplanen vann laga kraft 2026-10-30. Planförslaget har visats för granskning mellan 2026-02-20 till 2026-03-23 och samråd mellan 2025-03-06 till 2025-03-27. Handlingar Antagandehandlingar Plankarta Planbeskrivning Granskningsutlåtande Miljökonsekvensbeskrivning Särskild sammanställning av MKB Gestaltningsprogram Granskningsshandlingar Plankarta Planbeskrivning Samrådsredogörelse Miljökonsekvensbeskrivning Gestaltningsprogram Samrådshandlingar Plankarta Planbeskrivning Utredningar och underlag framtagna i samband med denna detaljplan Dagvattenutredning (2025) Dagvattenutredning komplettering (2025) Bullerutredning (2025) Riskutredning (2024) Artskyddsutredning (2025) Barnkonsekvensanalys (2025) Kumulativa effekter på artskyddet (2026) Utredningar framtagna för planprogram för Hertsöheden som utgör underlag även för denna plan Dagvattenutredning (2024) Våtmarksekologisk bedömning (2024) Geoteknisk utredning PM (2022) Geoteknisk utredning MUR (2022) Fågel och groddjursinventering som komplement till utförd NVI (2023) Naturvärden Hertsöheden sammanställning (2021) Naturinventering Hertsöheden (2013) Fördjupad grodinventering (2024) Beslutat planprogram Här hittar du en presentation av planförslaget",
+          "hash": "b644de2f5a23a17fb943b3b971f3a83131e9f3476d5222dd5f33d36eaf818091"
         }
       ]
     },
@@ -631,6 +638,19 @@
           "till": null,
           "text": "Utreda etablering av livsmedelsbutik och centrumverksamhet.",
           "hash": "c5d832ec7e4a67de72fae7549cafb40f352de5f21eef64a94199076b738d75bb"
+        }
+      ]
+    },
+    "11b240f8a1bbf631cb47": {
+      "namn": "Förslag till ändring av detaljplan för del av Bergviken, Daggkåpan 1 och del av Bergviken 5:10",
+      "url": "https://www.lulea.se/samhalle--utveckling/samhallsplanering/detaljplaner/pagaende-detaljplaner/pagaende-planer/2025-03-06-forslag-till-andring-av-detaljplan-for-del-av-bergviken-daggkapan-1-och-del-av-bergviken-510.html",
+      "versioner": [
+        {
+          "version": 1,
+          "fran": "2026-11-09",
+          "till": null,
+          "text": "Pröva förutsättningar för vård- och omsorgsboende. Ärendenummer: KLF2024-1056",
+          "hash": "52907efb4bb33c974c997137234a7a040b4a1b4aaf83f5387ebcc43bd53c6b3e"
         }
       ]
     }
